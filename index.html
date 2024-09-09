@@ -43,7 +43,24 @@
             </td>
         </tr>
     </table>
+
+    <h2>Try your own!</h2>
+    <form onsubmit="return false;">
+        <input id="input-text" type="text" placeholder="Type your text here" />
+        <button onclick="renderYourOwn()">Render</button>
+    </form>
+    <svg id="own-hash" viewBox="0 0 300 300" style="height: 300px;"></svg>
     <script>
-        renderBubbleVisualHash();
+        var canvases = document.querySelectorAll(".bubble-visual-hash");
+        canvases.forEach(renderBubbleVisualHash);
+
+        renderYourOwn = function () {
+            var text = document.getElementById("input-text").value;
+            var canvas = document.getElementById("own-hash");
+            canvas.innerHTML = "";
+            canvas.setAttribute("data-bubble-visual-hash", text);
+            renderBubbleVisualHash(canvas);
+        }
+        renderYourOwn();
     </script>
 </body>
