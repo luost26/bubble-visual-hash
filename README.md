@@ -6,6 +6,8 @@
 
 Bubble Visual Hash is a standalone script that creates a visual hash image from any given string. The image consists of colorful bubbles and can be used as placeholders for user profile pictures or cover images.
 
+This script has been used in the [academic-homepage](https://github.com/luost26/academic-homepage) project to generate visual hashes for publications without cover images.
+
 [Click here to see the demo.](https://luost26.github.io/bubble-visual-hash)
 
 
@@ -34,4 +36,4 @@ Finally, call the `renderBubbleVisualHash(canvas)` function to generate the visu
 
 ## Acknowledgement
 
-[dakridge/identicon](https://github.com/dakridge/identicon) - The script is based on the identicon script by dakridge.
+[dakridge/identicon](https://github.com/dakridge/identicon) - This script is based on the identicon project by dakridge.
